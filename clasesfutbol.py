@@ -1,4 +1,4 @@
-class Personalequipo:
+class PersonalEquipo:
     """
     Se establece una clase Padre que represente al personal que compone a la seleccion de futbol.
     Sus atributos seran id, nombre, apellidos y edad.
@@ -19,13 +19,13 @@ class Personalequipo:
 
     
  
-#Establecimiento de clases hijas con rescpeto a la clase padre Personalequipo     
+#Establecimiento de clases hijas con rescpeto a la clase padre PersonalEquipo     
 
     
-class Futbolista(Personalequipo):
+class Futbolista(PersonalEquipo):
     """
     Representa a un Futbolista, miembro del personal del equipo de la selección de futból
-    Hereda atributos y metodos de la clase Personalequipo. 
+    Hereda atributos y metodos de la clase PersonalEquipo. 
     Añade los atributos dorsal y demarcacion. 
     Añade los metodos jugar_partido y entrenar.
     """
@@ -42,10 +42,10 @@ class Futbolista(Personalequipo):
     
     
    
-class Entrenador(Personalequipo):
+class Entrenador(PersonalEquipo):
     """
     Representa a un Entrenador, miembro del personal del equipo de la selección de futból
-    Hereda atributos y metodos de la clase Personalequipo. 
+    Hereda atributos y metodos de la clase PersonalEquipo. 
     Añade el atributo idfederacion. 
     Añade los metodos dirigir_partido y dirigir_entrenamiento.
     """
@@ -61,10 +61,10 @@ class Entrenador(Personalequipo):
         return f"A {self.nombre} {self.apellidos} de la Federación {self.idfederacion} le correponde dirigir el entrenamiento"
         
         
-class Masajista(Personalequipo):
+class Masajista(PersonalEquipo):
     """
     Representa a un Masajista, miembro del personal del equipo de la selección de futból
-    Hereda atributos y metodos de la clase Personalequipo. 
+    Hereda atributos y metodos de la clase PersonalEquipo. 
     Añade el atributo titulacion y annosexperiencia.
     Añade el metodo dar_masajes 
     """
